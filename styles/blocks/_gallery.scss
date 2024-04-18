@@ -1,0 +1,12 @@
+.gallery {
+	--gridColumns: 3;
+	padding-top: 20px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(var(--gridColumns), 1fr);
+	gap: 20px;
+
+	@include tablet {
+		--gridColumns: 2;
+	}
+}

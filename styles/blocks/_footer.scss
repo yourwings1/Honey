@@ -1,0 +1,21 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	padding-top: 120px;
+
+	&__group {
+		display: flex;
+		column-gap: 10px;
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--color-accent);
+			border-radius: 50%;
+			width: 35px;
+			height: 35px;
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@import "normalize", "fonts", "mixins", "media", "variables", "utils", "globals";
+
+@import "blocks/body", "blocks/header", "blocks/button", "blocks/burger-button",
+	"blocks/cross-button", "blocks/title", "blocks/mobile-overlay",
+	"blocks/main", "blocks/info", "blocks/mission", "blocks/news",
+	"blocks/section", "blocks/product", "blocks/creator", "blocks/gallery",
+	"blocks/newsletter", "blocks/types-honey", "blocks/footer", "blocks/cart";

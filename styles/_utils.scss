@@ -1,0 +1,44 @@
+.container {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+	@include visually-hidden;
+}
+
+.hidden-tablet {
+	@include tablet {
+		display: none !important;
+	}
+}
+.visible-tablet {
+	@include tablet-above {
+		display: none !important;
+	}
+}
+
+.hidden-mobile {
+	@include tablet-s {
+		display: none !important;
+	}
+}
+
+.visible-mobile {
+	@include tablet-s-above {
+		display: none !important;
+	}
+}
+
+.active {
+	color: var(--color-accent);
+}
+
+.d-flex {
+	display: flex;
+}
+
+.space-bet {
+	justify-content: space-between;
+}

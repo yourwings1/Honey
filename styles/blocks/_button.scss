@@ -1,0 +1,38 @@
+.button {
+	@include flex-center(true);
+
+	height: var(--button-height);
+	padding-inline: 20px;
+	background-color: var(--color-accent);
+	border: var(--border);
+	font-size: 16px;
+	color: var(--color-light);
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.1s;
+	letter-spacing: 3px;
+	font-weight: 700;
+
+	&:hover {
+		background-color: var(--color-accent-alt);
+	}
+
+	&--accent {
+		background-color: var(--color-accent-alt);
+		transition: 0.1s;
+
+		&:hover {
+			background-color: var(--color-accent);
+		}
+	}
+
+	&-icon {
+		background-color: transparent;
+		border: none;
+		padding-inline: 10px;
+
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}

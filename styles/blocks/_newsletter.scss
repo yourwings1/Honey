@@ -1,0 +1,40 @@
+.newsletter {
+	display: flex;
+	padding-top: 40px;
+	column-gap: 50px;
+	align-items: center;
+
+	@include tablet {
+		flex-direction: column;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		@include tablet {
+			justify-content: center;
+			align-items: center;
+		}
+
+		&-description {
+			@include tablet {
+				max-width: 700px;
+			}
+		}
+
+		&-group {
+			display: flex;
+			column-gap: 7px;
+			max-width: 650px;
+
+			&__input {
+				padding: 10px 20px;
+				height: var(--button-height);
+				border-color: var(--color-dark);
+				box-shadow: none;
+			}
+		}
+	}
+}

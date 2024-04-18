@@ -1,0 +1,71 @@
+.header {
+	padding-top: 35px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		font-weight: 700;
+		text-transform: uppercase;
+		column-gap: 40px;
+
+		@include desktop {
+			column-gap: 15px;
+		}
+
+		@include tablet {
+			column-gap: 8px;
+		}
+
+		&-list {
+			display: flex;
+			column-gap: 40px;
+
+			@include desktop {
+				column-gap: 30px;
+			}
+
+			@include tablet {
+				column-gap: 10px;
+			}
+		}
+
+		&-item {
+			transition: 0.1s;
+			letter-spacing: 2px;
+
+			&:hover {
+				color: var(--color-accent);
+			}
+		}
+	}
+
+	&__cart {
+		position: relative;
+
+		&:hover svg {
+			fill: var(--color-accent-alt);
+		}
+
+		svg {
+			fill: #5b5858;
+			transition: 0.1s;
+		}
+
+		span {
+			position: absolute;
+			top: 25%;
+			left: 58%;
+			border-radius: 50%;
+			background-color: var(--color-accent);
+			height: 14px;
+			width: 14px;
+			font-size: 11px;
+		}
+	}
+}

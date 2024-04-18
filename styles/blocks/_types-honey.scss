@@ -1,0 +1,42 @@
+.types-honey {
+	--gridColumns: 2;
+	padding-top: 25px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(var(--gridColumns), 1fr);
+	gap: 20px;
+
+	@include tablet {
+		--gridColumns: 1;
+	}
+
+	&__item {
+		display: flex;
+		column-gap: 40px;
+		padding: 40px;
+		background-color: var(--color-light);
+
+		@include mobile-s {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+		@include mobile-s {
+			padding-top: 15px;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: var(--color-accent);
+	}
+}

@@ -1,0 +1,40 @@
+.mission {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	row-gap: 30px;
+
+	&__title {
+		font-weight: 700;
+		text-transform: uppercase;
+
+		@include tablet-s {
+			br {
+				display: none;
+			}
+		}
+
+		@include tablet-s {
+			order: -2;
+			margin: 0 auto;
+		}
+	}
+
+	&__text {
+		@include desktop {
+			max-width: 100%;
+		}
+	}
+
+	&-image {
+		@include desktop {
+			max-width: 100%;
+			height: auto;
+		}
+
+		@include tablet-s {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+body {
+	position: relative;
+
+	.image {
+		position: absolute;
+
+		&:nth-child(1) {
+			top: 2%;
+		}
+	}
+}
